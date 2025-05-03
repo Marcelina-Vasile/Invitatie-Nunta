@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitație Nuntă - V&M</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL56R7S0T5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SL56R7S0T5');
+</script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <p class="subtitle">suntem fericiți să te invităm<br> la nunta noastră</p>
+            <h1>VASILE & MARCELINA</h1>
+            <div class="buttons">
+                <a href="#rsvp" class="btn btn-primary">Vin cu drag!</a>
+                <a href="#event-details" class="btn btn-secondary">Vreau detalii</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Image section with fixed layout -->
+    <section id="invitation" class="invitation-section">
+        <div class="photo-collage">
+            <img src="./ionciorici-50.webp" alt="Poza1" class="photo photo-1">
+            <img src="./ionciorici-55.webp" alt="Poza2" class="photo photo-2">
+            <img src="./ionciorici-31.webp" alt="Poza3" class="photo photo-3">
+        </div>
+        
+        <div class="invitation-text">
+            <p><span class="highlight">Dragii noștri, </span>dacă citiți aceste rânduri, înseamnă că noi, Vasile și Marcelina,
+                vom fi bucuroși să vă avem alături la celebrarea căsătoriei noastre.</p>
+            
+            <div class="divider"></div>
+
+            <p>Vă invităm să celebrăm iubirea și să ne fiți martori ai unui nou capitol din povestea noastră.</p>
+        </div>
+    </section>
+    
+    <!-- Event Information Section -->
+    <section id="event-details" class="event-info">
+        <div class="event-info-content">
+            <div class="event-info-text">
+                <h2>Ce trebuie să știi despre eveniment</h2>
+            </div>
+            <div class="event-details">
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>13 iulie | Duminică</h3>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>15:00</h3>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Restaurantul Lago Event Park,<br>Sala Sicilia</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Join Us Section -->
+    <section class="join-us">
+        <p class="final-question" style="font-size:35px; color: #000000; font-weight: 400;">Post-Scriptum:</p>
+        <p class="highlight">Vom aprecia înlocuirea tradiționalului buchet de flori în favoarea unui vin sau a unei cărți.</p>
+    </section>
+
+
+<!-- Countdown Section -->
+<section class="countdown-section">
+    <div class="countdown-overlay"></div>
+    <div class="countdown-content">
+        <h2>PÂNĂ LA NUNTĂ AU RĂMAS</h2>
+        <div class="countdown-timer">
+            <div class="countdown-box">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Zile</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Ore</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minute</div>
+            </div>
+            <div class="countdown-box">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Secunde</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- RSVP Section -->
+<section class="rsvp-section" id="rsvp">
+    <div class="container">
+        <h2>Confirmă prezența</h2>
+        <p>Te rugăm să ne confirmi prezența până pe 10 iunie.</p>
+        
+        <form action="https://formspree.io/f/xyzellww?redirect=multumim.html" method="POST">
+            <div class="form-group">
+                <label for="name">Numele invitatului / invitaților</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="attendance">Confirmi prezența?</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="">Selectează...</option>
+                    <option value="yes">Da, confirm</option>
+                    <option value="no">Nu confirm</option>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <label>Veniți cu copii? (până la 7 ani)</label>
+                <div class="radio-group children-options">
+                    <div class="radio-option children-option">
+                        <input type="radio" id="children-0" name="children" value="0" checked>
+                        <label for="children-0">Venim fără copii</label>
+                    </div>
+                    <div class="radio-option children-option">
+                        <input type="radio" id="children-1" name="children" value="1">
+                        <label for="children-1">Venim cu un copil</label>
+                    </div>
+                    <div class="radio-option children-option">
+                        <input type="radio" id="children-2" name="children" value="2">
+                        <label for="children-2">Venim cu 2 copii</label>
+                    </div>
+                    <div class="radio-option children-option">
+                        <input type="radio" id="children-3" name="children" value="3">
+                        <label for="children-3">Venim cu 3 copii</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="message">*Mesaj</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Trimite confirmarea</button>
+        </form>
+    </div>
+</section>
+
+
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Vă așteptăm cu drag!</h2>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+           Copyright © 2025 - Toate drepturile sunt rezervate
+        </div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,1018 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./ionciorici-86.webp') no-repeat center center/cover;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: lowercase;
+    margin-bottom: -20px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: -162px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #8b5e48;
+    color: white;
+    border: none;
+    margin-top: 160px;
+}
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 160px;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Styles for the image section */
+.invitation-section {
+    padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.photo-collage {
+    flex: 1;
+    position: relative;
+    height: 500px;
+}
+.photo {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+.photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+.photo-1 {
+    width: 65%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.photo-2 {
+    width: 45%;
+    height: auto;
+    top: 15%;
+    right: 0;
+    z-index: 3;
+}
+.photo-3 {
+    width: 55%;
+    height: auto;
+    bottom: 0;
+    left: 15%;
+    z-index: 2;
+}
+.invitation-text {
+    flex: 1;
+    padding: 20px;
+}
+.invitation-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: #555;
+}
+.highlight {
+    font-weight: 600;
+    color: #8b5e48;
+}
+.final-question {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 40px;
+    color: #333;
+}
+
+/* Decorative elements */
+.divider {
+    width: 90px;
+    height: 3px;
+    background: #8b5e48;
+    margin: 30px 0;
+}
+
+/* Event info section */
+.event-info {
+    position: relative;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    background-image: url('./www.ionciorici.com-215.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.event-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.event-info-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+.event-info-text {
+    flex: 1;
+    padding-right: 50px;
+}
+.event-info-text h2 {
+    font-size: 52px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.event-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+}
+
+/* Pentru ecrane mai mici, ajustăm padding-ul */
+@media (max-width: 992px) {
+    .event-details {
+        padding-left: 30px; /* Un pic mai puțin spațiu pe ecrane medii */
+    }
+}
+
+@media (max-width: 768px) {
+    .event-details {
+        padding-left: 0; /* Eliminăm padding-ul pe ecrane mici */
+        align-items: center; /* Centram elementele pe ecrane mici */
+    }
+}
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.detail-icon {
+    font-size: 35px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail-content {
+    flex: 1;
+}
+.detail-content h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.detail-content p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Join us section */
+.join-us {
+    padding: 30px 0;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.join-us p {
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #555;
+}
+.join-us p.highlight {
+    color: #8b5e48;
+}
+.center-divider {
+    width: 60px;
+    height: 3px;
+    background: #8b5e48;
+    margin: 30px auto;
+}
+
+/* Welcome section */
+.welcome {
+    padding: 60px 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+.welcome h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.welcome p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.welcome .signatures {
+    font-size: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-logo img {
+    height: 40px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.social-icon i {
+    color: #000000; /* Culoare neagră pentru iconițe */
+    transition: 0.3s;
+}
+.social-icon:hover {
+    background: #8b5e48;
+}
+.social-icon:hover i {
+    color: #ffffff;
+}
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+
+
+
+/* Ajustare pentru imaginea de fundal în secțiunea countdown în versiunea mobilă */
+@media (max-width: 768px) {
+    .countdown-section {
+        background-position: 32% center !important; /* Deplasează imaginea mai spre dreapta */
+        background-image: url('./ionciorici-97.webp') !important;
+        background-size: cover !important;
+    }
+
+
+      /* Centrare și aranjare a imaginilor una sub alta */
+      .photo-collage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .photo {
+        position: static !important; /* Elimină poziționarea absolută */
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        max-width: 85% !important;
+        margin: 0 auto;
+    }
+    
+    .photo-1, .photo-2, .photo-3 {
+        width: 80% !important; /* Dimensiune uniformă */
+    }
+    
+
+    /* Centrarea detaliilor evenimentului */
+    .event-details {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .detail-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .detail-content {
+        text-align: center;
+    }
+}
+
+/* Pentru ecrane foarte mici, ajustări suplimentare */
+@media (max-width: 480px) {
+    .countdown-section {
+        background-position: 85% center; /* Deplasează imaginea și mai spre dreapta pe ecrane mici */
+    }
+    
+    .photo-1, .photo-2, .photo-3 {
+        width: 90% !important; /* Mărește puțin imaginile pentru ecrane foarte mici */
+    }
+    
+    /* Asigură-te că detaliile evenimentului sunt bine centrate și formatate */
+    .event-info-text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Countdown Section */
+.countdown-section {
+    padding: 100px 0;
+    background-image: url('./ionciorici-97.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+.countdown-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.countdown-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.countdown-content h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.countdown-number {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.23;
+    margin-bottom: 10px;
+}
+
+.countdown-label {
+    font-size: 15px;
+   /* text-transform: uppercase; */
+    opacity: 0.8;
+}
+
+.countdown-box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -25px; /* Half the gap between boxes */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px; /* Height of the vertical line */
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Responsive styles for countdown */
+
+@media (max-width: 768px) {
+    .countdown-box:not(:last-child)::after {
+        right: -10px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-box:not(:last-child)::after {
+        right: -5px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .countdown-timer {
+        gap: 20px;
+    }
+    
+    .countdown-number {
+        font-size: 60px;
+    }
+    
+    .countdown-content h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-timer {
+        gap: 10px;
+    }
+    
+    .countdown-number {
+        font-size: 40px;
+    }
+    
+    .countdown-label {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .invitation-section {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    .photo-collage {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .invitation-text {
+        width: 100%;
+    }
+    .event-info-content {
+        flex-direction: column;
+    }
+    .event-info-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .detail-item {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .photo-collage {
+        height: 350px;
+    }
+    .photo-1 {
+        width: 70%;
+    }
+    .photo-2 {
+        width: 50%;
+        top: 10%;
+    }
+    .photo-3 {
+        width: 60%;
+    }
+    .invitation-text p {
+        font-size: 16px;
+    }
+    .final-question {
+        font-size: 18px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .event-info-text h2 {
+        font-size: 32px;
+    }
+    .detail-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .detail-content h3 {
+        font-size: 18px;
+    }
+    .detail-content p {
+        font-size: 14px;
+    }
+}
+
+
+/* Form styling */
+.rsvp-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.rsvp-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.rsvp-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.rsvp-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8b5e48;
+    outline: none;
+}
+
+/* Radio buttons styling */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.radio-option {
+    position: relative;
+}
+.radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.radio-option label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.3s;
+    font-size: 16px;
+    color: #555;
+}
+.radio-option input[type="radio"]:checked + label {
+    background-color: #8b5e48;
+    color: white;
+    border-color: #8b5e48;
+}
+.radio-option label:hover {
+    border-color: #8b5e48;
+}
+
+/* Children options styling */
+.children-options {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.children-option {
+    width: 100%;
+}
+.children-option label {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px 15px;
+    justify-content: flex-start;
+    font-size: 16px;
+    text-align: left;
+}
+.children-option input[type="radio"]:checked + label {
+    background-color: #8b5e48;
+    color: white;
+    border-color: #8b5e48;
+}
+
+.rsvp-section .btn {
+    margin-top: 10px;
+    padding: 14px 30px;
+    font-size: 18px;
+    background-color: #8b5e48;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.rsvp-section .btn:hover {
+    background-color: #734d3b;
+}
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .form-group label {
+        font-size: 14px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .rsvp-section .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    
+    .radio-option label {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .children-option label {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+/* Ajustări generale pentru mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: -30px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .buttons {
+        margin-top: 40px;
+    }
+    
+    /* Ajustare pentru butoanele din hero section */
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    /* Ajustare pentru secțiunea de invitație */
+    .invitation-section {
+        padding: 50px 20px;
+    }
+    
+    /* Ajustare pentru photo collage */
+    .photo-collage {
+        height: 300px;
+    }
+    
+    /* Ajustare pentru textul din secțiunea de invitație */
+    .invitation-text p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+    /* Ajustare pentru secțiunea de informații despre eveniment */
+    .event-info {
+        padding: 50px 0;
+    }
+    
+    .event-info-content {
+        padding: 0 20px;
+    }
+    
+    .event-info-text h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    /* Ajustare pentru secțiunea join us */
+    .join-us {
+        padding: 50px 20px;
+    }
+    
+    /* Ajustare pentru countdown section */
+    .countdown-section {
+        padding: 50px 0;
+    }
+    
+    .countdown-content h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    /* Ajustare pentru RSVP section */
+    .rsvp-section {
+        padding: 50px 20px;
+    }
+    
+    .rsvp-section h2 {
+        font-size: 28px;
+    }
+    
+    .rsvp-section p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Ajustări specifice pentru telefoane foarte mici */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: -20px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .buttons {
+        margin-top: 30px;
+    }
+    
+    /* Stivuim butoanele pe dispozitive foarte mici */
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .btn-primary, .btn-secondary {
+        margin-top: 0;
+    }
+    
+    /* Ajustare pentru countdown */
+    .countdown-timer {
+        gap: 15px;
+    }
+    
+    .countdown-number {
+        font-size: 32px;
+    }
+    
+    .countdown-label {
+        font-size: 10px;
+    }
+    
+    .countdown-box:not(:last-child)::after {
+        display: none; /* Eliminăm liniile verticale dintre boxuri pe mobile */
+    }
+    
+    /* Ajustare pentru photo collage */
+    .photo-collage {
+        height: 250px;
+    }
+    
+    /* Ajustare pentru formular */
+    .form-group label {
+        font-size: 14px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Fixare pentru problema formularului pe mobile */
+@media (max-width: 576px) {
+    .radio-group {
+        flex-direction: column;
+    }
+    
+    .radio-option label {
+        width: 100%;
+        border-radius: 8px;
+        height: auto;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+    
+    .children-options {
+        width: 100%;
+    }
+}
+
+/* Fixare pentru hero section */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .content {
+        padding: 0 20px;
+    }
+}
+
+/* Ajustare pentru eveniment info pe dimensiuni medii */
+@media (max-width: 992px) and (min-width: 577px) {
+    .event-info-content {
+        padding: 0 30px;
+    }
+    
+    .invitation-section {
+        padding: 60px 30px;
+    }
+}
+
+
+/* Soluție pentru poziționarea corectă a imaginilor și evitarea suprapunerilor */
+
+/* Setare clară a dimensiunilor și margini de separare între secțiuni */
+.hero {
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Asigurăm că secțiunea de invitație are un z-index mai mic decât hero */
+.invitation-section {
+    position: relative;
+    z-index: 2;
+    background-color: #f8f8f8; /* Adăugăm un fundal solid pentru a preveni transparența */
+    margin-top: 0;
+    padding-top: 60px;
+    border-top: 1px solid #eee; /* Adăugăm o bordură subtilă pentru separare vizuală */
+}
+
+/* Resetăm poziționarea absolută a imaginilor pentru mobile și folosim un layout mai sigur */
+@media (max-width: 768px) {
+    .photo-collage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .photo {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        max-width: 85% !important;
+        margin: 0 auto;
+    }
+    
+    .photo-1 {
+        order: 1;
+        width: 80% !important;
+    }
+    
+    .photo-2 {
+        order: 3;
+        width: 65% !important;
+        margin-left: auto;
+        margin-right: 15%;
+    }
+    
+    .photo-3 {
+        order: 2;
+        width: 70% !important;
+    
+        margin-right: auto;
+    }
+}
+
+/* Pentru ecrane foarte mici, simplificăm și mai mult */
+@media (max-width: 480px) {
+    .photo-1 {
+        width: 90% !important;
+    }
+    
+    .photo-2{
+        width: 72% !important;
+    }
+    .photo-3 {
+        width: 83% !important;
+    }
+}

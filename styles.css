@@ -330,7 +330,14 @@ footer {
 
 
 
-
+@media (max-width: 430px) {
+    .countdown-section {
+      background-position: 32% center !important;
+      background-image: url('./ionciorici-97.webp') !important;
+      background-size: cover !important;
+    }
+  }
+  
 /* Ajustare pentru imaginea de fundal în secțiunea countdown în versiunea mobilă */
 @media (max-width: 768px) {
     .countdown-section {
